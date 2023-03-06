@@ -1,0 +1,57 @@
+body {
+  background-color: black;
+}
+
+#enter {
+  padding: 20px 20px;
+  display: inline-block;
+  color: #D6005C;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 3em;
+  font-family: "courier", "monaco", "sans-serif";
+  overflow: hidden;
+  border-radius: 6px;
+  margin: 20px auto 0px;
+}
+
+
+#enter:hover {
+  color: #FEFE8A;
+  background: #D6005C;
+  border-color: #D6005C;
+  box-shadow: 0 0 50px #D6005C;
+  cursor: pointer;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content-wrapper {
+  margin-top: 40px;
+}
+
+.sign-wrapper {
+  width: fit-content;
+}
+
+img {
+  margin: 0;
+}
+
+.video-hidden {
+  display: none;
+}
+
+.video-shown {
+  width: 90%;
+  height: 90%;
+}
+
+.loader {
+  margin-top: 20px;
+}

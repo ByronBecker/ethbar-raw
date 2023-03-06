@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "dfx": "0.11.1",
+  "canisters": {
+    "cdn": {
+      "type": "motoko",
+      "main": "actors/cdn.mo"
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "vessel sources",
+      "args": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  }
+}

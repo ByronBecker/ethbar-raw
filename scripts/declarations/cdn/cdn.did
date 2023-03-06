@@ -1,0 +1,14 @@
+type CanisterMetrics = 
+ record {
+   cycles: nat;
+   heapSize: nat;
+ };
+type CDN = 
+ service {
+   getCanisterMetrics: () -> (CanisterMetrics) query;
+   getRBTElementsCount: () -> (nat) query;
+   getRBTreeItem: (text) -> (opt blob) query;
+   hasItemWithKey: (text) -> (opt text) query;
+   uploadChunk: (text, blob) -> (nat);
+ };
+service : () -> CDN

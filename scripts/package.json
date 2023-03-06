@@ -1,0 +1,21 @@
+{
+  "name": "video_loader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "upload": "npx ts-node src/upload.ts && npm run alert-done",
+    "alert-done": "osascript -e 'beep beep beep'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@dfinity/agent": "^0.13.2",
+    "candb-client-typescript": "^0.0.0-alpha.0",
+    "csv-stringify": "^6.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.7",
+    "ts-node": "^10.9.1"
+  }
+}
